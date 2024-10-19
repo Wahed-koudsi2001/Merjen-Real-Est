@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 
 <head>
     <meta charset="utf-8">
@@ -29,7 +29,7 @@
 
 <body>
     <!-- Top Bar Start -->
-    <div class="top-bar d-none d-md-block">
+    <div class="top-bar d-none d-md-block" id="home">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-8">
@@ -53,7 +53,8 @@
                         <div class="social">
                             <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
                             <a target="_blank" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a target="_blank" href="#"><i class="fab fa-instagram"></i></a>
+                            <a target="_blank" href="#"><i class="fab fa-instagram"></i>
+                            </a><a target="_blank" href="#"><i class="fab fa-youtube"></i></a>
                             <a target="_blank" href="#">
                                 <img src="img/tik-tok.png" alt="tiktok">
                             </a>
@@ -77,10 +78,11 @@
 
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav mr-auto">
-                    <a href="index.html" class="nav-item nav-link active">الرئيسية</a>
-                    <a href="#" class="nav-item nav-link">من نحن</a>
-                    <a href="#" class="nav-item nav-link">خدماتنا العقارية</a>
-                    <a href="#" class="nav-item nav-link">تواصل معنا</a>
+                    <a href="#home" class="nav-item nav-link active">الرئيسية</a>
+                    <a href="#about" class="nav-item nav-link">من نحن</a>
+                    <a href="#services" class="nav-item nav-link">خدماتنا العقارية</a>
+                    <a href="#testimonial" class="nav-item nav-link">آراء العملاء</a>
+                    <a href="#contact" class="nav-item nav-link">تواصل معنا</a>
                     <a href="#" class="nav-item nav-link">English</a>
                 </div>
             </div>
@@ -107,7 +109,6 @@
                             نصبح الشريك المفضل لعملائنا وأن نكون رائدين في استخدام احدث التقنيات و الابتكارات لبناء
                             مستدام يواكب رؤية المملكة
                             العربية السعودية و تطلعاتها.
-
                         </p>
                         <div class="carousel-btn">
                             <a target="_blank" class="btn" href="https://api.whatsapp.com/send?phone=0000000000"><i
@@ -128,10 +129,9 @@
                             للتطوير العقاري الشركة الرائدة
                             في مجال المقاولات و التطوير العقاري، ونسعى لتحقيق رضا العملاء والشركاء من خلال تقديم خدمات
                             مميزة تتجاوز توقعاتهم.
-
                         </p>
                         <div class="carousel-btn">
-                            <a target="_blank" class="btn" href="https://api.whatsapp.com/send?phone=966559606663"><i
+                            <a target="_blank" class="btn" href="https://api.whatsapp.com/send?phone=000000000"><i
                                     class="fab fa-whatsapp"></i>ابقى على تواصل</a>
                         </div>
                     </div>
@@ -149,7 +149,7 @@
                             الصناعي.
                         </p>
                         <div class="carousel-btn">
-                            <a target="_blank" class="btn" href="https://api.whatsapp.com/send?phone=966559606663"><i
+                            <a target="_blank" class="btn" href="https://api.whatsapp.com/send?phone=00000000"><i
                                     class="fab fa-whatsapp"></i>ابقى على تواصل</a>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
     <!-- Carousel End -->
 
     <!-- About Start -->
-    <div class="about">
+    <div class="about" id="about">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 d-flex wahed-img justify-content-center">
@@ -211,34 +211,14 @@
 
 
     <!-- Service Start -->
-    <!-- <div class="service">
+    <div class="service" id="services">
         <div class="container">
             <div class="section-header">
-                <p>خدماتنا القانونية</p>
-                <h2>أفضل خدماتنا القانونية</h2>
+                <p>خدماتنا العقارية</p>
+                <h2>أفضل خدماتنا العقارية</h2>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-item">
-                        <img src="img/icon-1.png" alt="Icon">
-                        <h3 class="font-weight-bold">المحاماة</h3>
-                        <p>
-                            احقاقاً للحق ونصرة للمظلوم وذوداً عن القيم الإنسانية نقوم بجميع إجراءات....
-                        </p>
-                        <a href="pagesArabic/service.html">اقرأ المزيد</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-item">
-                        <img src="img/icon-2.png" alt="Icon">
-                        <h3 class="font-weight-bold">التحكيم</h3>
-                        <p>
-                            تقدم شركتنا خدمة التحكيم كبديل فعال وسريع عن اللجوء للمحكمة في....
-                        </p>
-                        <a href="pagesArabic/service.html">اقرأ المزيد</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-12">
                     <div class="service-item">
                         <img src="img/icon-3.png" alt="Icon">
                         <h3 class="font-weight-bold">التوثيق</h3>
@@ -248,7 +228,7 @@
                         <a href="pagesArabic/service.html">اقرأ المزيد</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-12">
                     <div class="service-item">
                         <img src="img/icon-4.png" alt="Icon">
                         <h3 class="font-weight-bold">قسمة التركات</h3>
@@ -258,7 +238,7 @@
                         <a href="pagesArabic/service.html">اقرأ المزيد</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-12">
                     <div class="service-item">
                         <img src="img/icon-5.png" alt="Icon">
                         <h3 class="font-weight-bold">الاستشارات الشرعية والقانونية</h3>
@@ -268,7 +248,7 @@
                         <a href="pagesArabic/service.html">اقرأ المزيد</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-12">
                     <div class="service-item">
                         <img src="img/icon-6.png" alt="Icon">
                         <h3 class="font-weight-bold">صياغة ودراسة الأنظمة والعقود</h3>
@@ -278,7 +258,7 @@
                         <a href="pagesArabic/service.html">اقرأ المزيد</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-12">
                     <div class="service-item">
                         <img src="img/icon-7.png" alt="Icon">
                         <h3 class="font-weight-bold">تأسيس الشركات</h3>
@@ -288,7 +268,7 @@
                         <a href="pagesArabic/service.html">اقرأ المزيد</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-12">
                     <div class="service-item">
                         <img src="img/icon-8.png" alt="Icon">
                         <h3 class="font-weight-bold">الشؤون القانونية للشركات</h3>
@@ -298,12 +278,9 @@
                         <a href="pagesArabic/service.html">اقرأ المزيد</a>
                     </div>
                 </div>
-                <a href="pagesArabic/service.html">
-                    <button class="service-btn">المزيد من الخدمات</button>
-                </a>
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- Service End -->
 
     <!-- Start CTA -->
@@ -316,87 +293,59 @@
     </section>
     <!-- END CTA -->
 
-    <!-- Team Start -->
-    <!-- <div class="team">
+
+    <!-- Testimonial Start -->
+    <div class="testimonial" id="testimonial">
         <div class="container">
             <div class="section-header">
-                <p>تعرف على مستشارينا</p>
-                <h2>فريقنا الاستشاري المتخصص</h2>
+                <p>آراء العملاء</p>
+                <h2>100% آراء العملاء إيجابية</h2>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/team/مؤسس الشركة.png" alt="Team Image">
-                        </div>
-                        <div class="team-text">
-                            <h2 class="font-weight-bold">المحامي / فيصل بن عبدالله الفوزان</h2>
-                            <p>شريك مؤسس</p>
-                            <ul class="text-right">
-                                <li>خبرة دامت 33 عاماً في السلك القانوني</li>
-                                <li>متقاعد من القضاء على مرتبة رئيس محكمة استئناف</li>
-                                <li>رئيس دائرة الاستئناف المختصة بدراسة الصكوك العقارية على مستوى المملكة</li>
-                                <li>عضو لجنة اعداد هيكلة المجلس الأعلى للقضاء</li>
-                                <li>عضو لجنة صياغة اللوائح التنفيذية لنظام المرافعات الشرعية</li>
-                                <li>رئيس المحكمة الجزائية بالرياض</li>
-                                <li>عضو لجنة اعداد استراتيجية مركز التدريب العدلي</li>
-                                <li>مدرب معتمد في مركز التدريب العدلي</li>
-                                <li>محاضر متعاون في جامعة القصيم</li>
-                                <li>رئيس دائرة النظر في قضايا التحكيم بمحكمة الاستئناف بالقصيم</li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="owl-carousel testimonials-carousel">
+                <div class="testimonial-item">
+                    <img src="img/client.png" alt="Image">
+                    <p>
+                        من لايشكر الناس لا يشكر الله شكراً لكم من الأعماق ابتدينا معهم ب ٥ الاف والان ولله الحمد وصلنا
+                        فوق ١٠٠ الف شكراً لحرصكم
+                        على نجاحنا وشكراً لأمانتكم معنا ✨🙏
+                    </p>
+                    <h2>نواف ابوخالد</h2>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/team/team-1.png" alt="Team Image">
-                        </div>
-                        <div class="team-text">
-                            <h2 class="font-weight-bold">المحامي/ عبدالله بن فيصل الفوزان</h2>
-                            <p>شريك مؤسس</p>
-                            <ul class="text-right">
-                                <li>مؤسس مكتب عبد</li>
-                                <li>مدير الإدارة القانونية في شركة قاب</li>
-                                <li>مسؤول الحوكمة في مجموعة من الشركات المساهمة</li>
-                                <li>مستشار قانوني لمشروع ادراج احد الشركات في تداول</li>
-                                <li>مستشار قانوني لعدد من الجهات الاعتبارية و الأفراد</li>
-                                <li>خبرة في قطاع المحاماة منذ عام ٢٠١٧</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="testimonial-item">
+                    <img src="img/client.png" alt="Image">
+                    <p>
+                        من لايشكر الناس لا يشكر الله شكراً لكم من الأعماق ابتدينا معهم ب ٥ الاف والان ولله الحمد وصلنا
+                        فوق ١٠٠ الف شكراً لحرصكم
+                        على نجاحنا وشكراً لأمانتكم معنا ✨🙏
+                    </p>
+                    <h2>نواف ابوخالد</h2>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/team/team-4.jpg" alt="Team Image">
-                        </div>
-                        <div class="team-text">
-                            <h2 class="font-weight-bold">المحامي / محمد بن عبدالله الفوزان</h2>
-                            <p>شريك مؤسس</p>
-                            <ul class="text-right">
-                                <li>مؤسس مكتب عبد</li>
-                                <li>مؤسس مكتب محمد الفوزان للمحاماة</li>
-                                <li>محام خاص في مكتب رجل الأعمال عجلان العجلان</li>
-                                <li>مستشار قانوني في شركة عجلان واخوانه</li>
-                                <li>موثق معتمد من وزارة العدل</li>
-                                <li>مستشار قانوني لعدد من الجهات الاعتبارية والأفراد</li>
-                                <li>خبرة في قطاع المحاماة منذ عام ٢٠١٣</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="testimonial-item">
+                    <img src="img/client.png" alt="Image">
+                    <p>
+                        من لايشكر الناس لا يشكر الله شكراً لكم من الأعماق ابتدينا معهم ب ٥ الاف والان ولله الحمد وصلنا
+                        فوق ١٠٠ الف شكراً لحرصكم
+                        على نجاحنا وشكراً لأمانتكم معنا ✨🙏
+                    </p>
+                    <h2>نواف ابوخالد</h2>
                 </div>
-                <a href="pagesArabic/about.html">
-                    <button class="service-btn">فريق العمل</button>
-                </a>
+                <div class="testimonial-item">
+                    <img src="img/client.png" alt="Image">
+                    <p>
+                        من لايشكر الناس لا يشكر الله شكراً لكم من الأعماق ابتدينا معهم ب ٥ الاف والان ولله الحمد وصلنا
+                        فوق ١٠٠ الف شكراً لحرصكم
+                        على نجاحنا وشكراً لأمانتكم معنا ✨🙏
+                    </p>
+                    <h2>نواف ابوخالد</h2>
+                </div>
             </div>
         </div>
-    </div> -->
-    <!-- Team End -->
+    </div>
+    <!-- Testimonial End -->
 
 
     <!-- Contact Start -->
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="container">
             <div class="section-header">
                 <p>ابقى على تواصل</p>

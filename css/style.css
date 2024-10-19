@@ -1,6 +1,9 @@
 /*******************************/
 /********* General CSS *********/
 /*******************************/
+html {
+    scroll-behavior: smooth;
+}
 body {
     color: #797979;
     background: #ffffff;
@@ -488,7 +491,7 @@ a:focus {
 /*******************************/
 .section-header {
     position: relative;
-    text-align: left;
+    text-align: right;
     margin-bottom: 45px;
 }
 
@@ -511,7 +514,7 @@ a:focus {
     width: 200px;
     height: 0;
     top: 23px;
-    left: -40px;
+    right: 0px;
     border-bottom: 30px solid;
     border-image: repeating-linear-gradient(
             60deg,
@@ -566,6 +569,7 @@ a:focus {
 .about .section-header {
     margin-bottom: 30px;
     margin-left: 0;
+    text-align: right;
 }
 
 .about .about-img {
@@ -902,16 +906,16 @@ a:focus {
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #092a49;
+    color: #d0b16a;
     background: none;
-    border: 2px solid #092a49;
+    border: 2px solid #d0b16a;
     border-radius: 0;
     transition: 0.3s;
 }
 
 .contact .contact-form .btn:hover {
     color: #cbb36d;
-    background: #092a49;
+    background: #2b2b2b;
 }
 
 .contact .help-block ul {
@@ -967,7 +971,7 @@ a:focus {
     position: relative;
     margin-top: 45px;
     padding-top: 90px;
-    background: #092a49;
+    background: #2b2b2b;
 }
 
 .footer .footer-contact,
@@ -1036,9 +1040,9 @@ a:focus {
 }
 
 .footer .footer-social a i {
-    margin-right: 15px;
+    margin-left: 15px;
     font-size: 18px;
-    color: #092a49;
+    color: #fff;
 }
 
 .footer .footer-social a:last-child i {
@@ -1273,4 +1277,138 @@ a:focus {
     height: 500px;
     position: relative;
     z-index: 999999999;
+}
+
+/*******************************/
+/******* Testimonial CSS *******/
+/*******************************/
+.testimonial {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+
+.testimonial .testimonials-carousel {
+    position: relative;
+    width: calc(100% + 30px);
+    margin: 0 -15px;
+}
+
+.testimonial .testimonial-item {
+    position: relative;
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.testimonial .testimonial-item img {
+    position: relative;
+    width: 180px;
+    margin: 0 auto 15px;
+    margin-bottom: 15px;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+}
+
+.testimonial .testimonial-item p {
+    margin-bottom: 15px;
+}
+
+.testimonial .testimonial-item h2 {
+    position: relative;
+    color: #092a49;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+}
+
+.testimonial .testimonial-item h2::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background: #0796fe;
+    transition: 0.3s;
+}
+
+.testimonial .testimonial-item:hover h2::before {
+    width: 60px;
+}
+
+.testimonial .testimonial-item h3 {
+    color: #999999;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.testimonial .owl-nav {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial .owl-nav .owl-prev,
+.testimonial .owl-nav .owl-next {
+    position: relative;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0796fe;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.testimonial .owl-nav .owl-prev {
+    padding-left: 80px;
+}
+
+.testimonial .owl-nav .owl-next {
+    padding-right: 77px;
+}
+
+.testimonial .owl-nav .owl-prev:hover,
+.testimonial .owl-nav .owl-next:hover {
+    color: #092a49;
+}
+
+.testimonial .owl-nav .owl-prev::after,
+.testimonial .owl-nav .owl-next::after {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 3px;
+    top: 11px;
+    background: #0796fe;
+    transition: 0.3s;
+}
+
+.testimonial .owl-nav .owl-prev::after {
+    left: 9px;
+}
+
+.testimonial .owl-nav .owl-next::after {
+    right: 9px;
+}
+
+.testimonial .owl-nav .owl-prev:hover::after {
+    background: #092a49;
+}
+
+.testimonial .owl-nav .owl-next:hover::after {
+    background: #092a49;
 }

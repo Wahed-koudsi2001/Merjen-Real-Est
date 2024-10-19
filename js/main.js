@@ -77,6 +77,37 @@
         })
     });
 
+    // Testimonials carousel
+    $(".testimonials-carousel").owlCarousel({
+        autoplay: true,
+        animateIn: 'slideInDown',
+        animateOut: 'slideOutDown',
+        items: 1,
+        smartSpeed: 450,
+        dots: false,
+        loop: true,
+        nav: true,
+        rtl: true,
+        navText: [
+            '<i style="rotate: 180deg" class="fa fa-angle-left" aria-hidden="true"></i>',
+            '<i style="rotate: 180deg" class="fa fa-angle-right" aria-hidden="true"></i>'
+        ],
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            992: {
+                items: 3
+            }
+        }
+    });
+
 
     // Show popup when "about-us-video" button is clicked
     $('.about-us-video').on('click', function () {
