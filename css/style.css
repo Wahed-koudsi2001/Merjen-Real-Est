@@ -479,7 +479,7 @@ a:focus {
         letter-spacing: 0;
     }
     .navbar .navbar-brand img {
-        max-height: 50px;
+        max-height: 50px !important;
     }
 }
 
