@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: "Tajawal", sans-serif;
+}
+.navbar a.nav-link {
+    font-size: 16px;
+}
+.top-bar .text {
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    border-left: none;
+}
+.top-bar .text i {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.top-bar .text p {
+    margin: 0 5px 0 0;
+}
+.top-bar .social a {
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    border-right: none;
+}
+.carousel .carousel-text .btn i {
+    margin: 0;
+    margin-left: 5px;
+}
+footer .tel {
+    color: #fff !important;
+}
+.footer .footer-contact h2::after,
+.footer .footer-link h2::after,
+.footer .footer-newsletter h2::after {
+    right: 0;
+}
+.contact .contact-text {
+    padding-left: 0;
+    padding-right: 15px;
+}
+.footer .footer-link a::before {
+    margin-left: 10px;
+    margin-right: 0;
+}
+.team .team-img {
+    height: 500px !important;
+}
