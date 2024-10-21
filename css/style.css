@@ -693,7 +693,7 @@ a:focus {
 }
 
 .service .service-item img {
-    max-height: 50px;
+    max-height: 120px;
     margin-bottom: 20px;
 }
 
@@ -1456,7 +1456,7 @@ a:focus {
 }
 
 .fact .fact-item img {
-    max-height: 50px;
+    max-height: 60px;
     margin-bottom: 15px;
 }
 
@@ -1626,5 +1626,8 @@ a:focus {
     .fancy::before {
         width: 1rem;
         left: 1.3em;
+    }
+    .service .service-item img {
+        max-height: 90px;
     }
 }
