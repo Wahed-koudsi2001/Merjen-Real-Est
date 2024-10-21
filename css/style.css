@@ -1619,4 +1619,8 @@ a:focus {
     .popup-project .main {
         width: 85%;
     }
+    .fancy::before {
+        width: 1rem;
+        left: 1.3em;
+    }
 }
