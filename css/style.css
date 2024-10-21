@@ -8,6 +8,7 @@ body {
     color: #797979;
     background: #ffffff;
     font-family: "Lato", sans-serif;
+    user-select: none;
 }
 
 h1,
@@ -478,9 +479,9 @@ a:focus {
         font-size: 14px;
         letter-spacing: 0;
     }
-    .navbar .navbar-brand img {
+    /* .navbar .navbar-brand img {
         max-height: 50px !important;
-    }
+    } */
 }
 
 /*******************************/
@@ -555,7 +556,8 @@ a:focus {
 
 /********** About CSS **********/
 /*******************************/
-.about {
+.about,
+.projects {
     position: relative;
     width: 100%;
     padding: 45px 0;
@@ -1408,4 +1410,201 @@ a:focus {
 
 .testimonial .owl-nav .owl-next:hover::after {
     background: #092a49;
+}
+
+/*******************************/
+/********** Fact CSS ***********/
+/*******************************/
+.fact {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.fact .fact-item {
+    height: 200px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 30px 10px 25px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid transparent;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.fact .fact-item:hover {
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: none;
+}
+
+.fact .fact-item img {
+    max-height: 50px;
+    margin-bottom: 15px;
+}
+
+.fact .fact-item h2 {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.fancy {
+    background-color: transparent;
+    border: 2px solid #2b2b2b;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 1.25em 2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 13px;
+}
+
+.fancy::before {
+    content: " ";
+    width: 1.5625rem;
+    height: 2px;
+    background: #2b2b2b;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition:
+        background 0.3s linear,
+        width 0.3s linear;
+}
+
+.fancy .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #2b2b2b;
+}
+
+.fancy .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #e8e8e8;
+    transition:
+        width 0.5s ease-out,
+        left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition:
+        width 0.5s ease-out,
+        right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition:
+        width 0.5s ease-out,
+        right 0.3s ease-out;
+}
+
+.fancy:hover {
+    color: white;
+    background: #2b2b2b;
+}
+
+.fancy:hover::before {
+    width: 0.9375rem;
+    background: white;
+}
+
+.fancy:hover .text {
+    color: white;
+    padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+    left: -2px;
+    width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+.fancy:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+}
+.card {
+    border-color: #ccb270 !important;
+}
+
+@media (max-width: 500px) {
+    .fancy {
+        padding: 0.8rem 0.6rem;
+    }
+}
+.popup-project {
+    background-image: linear-gradient(to right, #cbb36d73, #092a4973);
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    z-index: 9999999999;
+}
+.popup-project .main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    margin: auto;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.popup-project .main h4 {
+    color: #fff;
+}
+.popup-project .close-img {
+    width: 25px;
+    cursor: pointer;
+}
+.popup-project .main-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    margin: 30px auto 0;
+}
+@media (max-width: 900px) {
+    .popup-project .main {
+        width: 85%;
+    }
 }

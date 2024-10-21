@@ -46,3 +46,18 @@ footer .tel {
 .team .team-img {
     height: 500px !important;
 }
+.section-header h2::after {
+    left: initial;
+    right: 0;
+}
+.testimonial .testimonial-item h2 {
+    text-align: right !important;
+}
+.testimonial .testimonial-item h2::before {
+    left: initial;
+    right: 0;
+}
+.footer .footer-social a i {
+    margin-right: 0;
+    margin-left: 15px;
+}

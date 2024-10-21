@@ -127,5 +127,38 @@
         }
     });
 
+    $(document).ready(function () {
+        // Handle click event on the .fa-eye button
+        $('.eye').on('click', function () {
+            // Find the closest card and get its title and image source
+            var card = $(this).closest('.card');
+            var cardTitle = card.find('.card-title').text();
+            var cardImageSrc = card.find('.card-img-top').attr('src');
+
+            // Update the popup title and image
+            $('.popup-title').text(cardTitle);
+            $('.main-img').attr('src', cardImageSrc);
+
+            // Show the popup
+            $('.popup-project').css('display', 'block');
+        });
+
+        // Handle close button click event
+        $('.close-img').on('click', function () {
+            // Hide the popup
+            $('.popup-project').css('display', 'none');
+        });
+
+        // Close the popup if clicked outside the main content
+        $('.popup-project').on('click', function (e) {
+            if ($(e.target).closest('.main').length === 0) {
+                // Hide the popup if the click is outside the .main container
+                $('.popup-project').css('display', 'none');
+            }
+        });
+    });
+
+
+
 })(jQuery);
 
