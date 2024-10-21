@@ -61,3 +61,6 @@ footer .tel {
     margin-right: 0;
     margin-left: 15px;
 }
+.fact .fact-item {
+    height: 200px;
+}
