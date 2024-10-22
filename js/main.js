@@ -130,14 +130,28 @@
     $(document).ready(function () {
         // Handle click event on the .fa-eye button
         $('.eye').on('click', function () {
-            // Find the closest card and get its title and image source
+            // Find the closest card and get its title
             var card = $(this).closest('.card');
             var cardTitle = card.find('.card-title').text();
-            var cardImageSrc = card.find('.card-img-top').attr('src');
 
-            // Update the popup title and image
+            // Check if the card has a video or an image
+            var videoSrc = card.find('video').attr('src');
+            var imageSrc = card.find('.card-img-top').attr('src');
+
+            // Update the popup title
             $('.popup-title').text(cardTitle);
-            $('.main-img').attr('src', cardImageSrc);
+
+            // Clear previous content in the popup
+            $('.main-img').remove();
+            $('.main video').remove();
+
+            if (videoSrc) {
+                // If it's a video, create a video element
+                $('.main').append('<video autoplay controls class="main-video" style="width: 100%; height: auto;"><source src="' + videoSrc + '" type="video/mp4"></video>');
+            } else if (imageSrc) {
+                // If it's an image, create an image element
+                $('.main').append('<img src="' + imageSrc + '" class="main-img" alt="img" style="width: 100%; height: auto;">');
+            }
 
             // Show the popup
             $('.popup-project').css('display', 'block');
@@ -157,6 +171,7 @@
             }
         });
     });
+
 
 
 

@@ -574,6 +574,14 @@ a:focus {
     width: 100%;
     padding: 45px 0;
 }
+.projects .card {
+    /* height: 400px; */
+}
+.projects .card img,
+.projects .card video {
+    height: 280px;
+    object-fit: cover;
+}
 
 .about .section-header {
     margin-bottom: 30px;
@@ -1617,7 +1625,7 @@ a:focus {
     height: 500px;
     object-fit: cover;
     display: block;
-    margin: 30px auto 0;
+    margin: 0 auto;
 }
 @media (max-width: 900px) {
     .popup-project .main {
